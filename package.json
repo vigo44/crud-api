@@ -1,0 +1,26 @@
+{
+  "name": "crud-api",
+  "version": "1.0.0",
+  "description": "crud-api",
+  "type": "module",
+  "engines": {
+    "node": ">=22.9.0"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vigo44/crud-api.git"
+  },
+  "keywords": [
+    "node",
+    "crud"
+  ],
+  "author": "Evgeniy Kashtanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vigo44/crud-api/issues"
+  },
+  "homepage": "https://github.com/vigo44/crud-api#readme"
+}
