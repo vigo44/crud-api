@@ -2,12 +2,15 @@
   "name": "crud-api",
   "version": "1.0.0",
   "description": "crud-api",
-  "type": "module",
+  "main": "index.js",
   "engines": {
     "node": ">=22.9.0"
   },
   "scripts": {
-    "test": "test"
+    "start:prod": "npm run build  && node ./dist/bundle.js",
+    "start:dev": "nodemon",
+    "test": "test",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -22,5 +25,18 @@
   "bugs": {
     "url": "https://github.com/vigo44/crud-api/issues"
   },
-  "homepage": "https://github.com/vigo44/crud-api#readme"
+  "homepage": "https://github.com/vigo44/crud-api#readme",
+  "devDependencies": {
+    "@types/node": "^22.7.7",
+    "nodemon": "^3.1.7",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "uuid": "^10.0.0"
+  }
 }
