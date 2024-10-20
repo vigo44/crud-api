@@ -24,6 +24,13 @@ export const responseErrorHandler = (error: Error, res: ServerResponse) => {
         })
         .end(RESPONSE_ERROR_MESSAGE.METHOD_NOT_SUPPORTED);
       break;
+    case RESPONSE_ERROR_MESSAGE.USER_NOT_FOUND:
+      res
+        .writeHead(HTTP_CODES.NOT_FOUND, {
+          "Content-Type": "text/plain",
+        })
+        .end(RESPONSE_ERROR_MESSAGE.USER_NOT_FOUND);
+      break;
     default:
       console.log(error.message);
       res

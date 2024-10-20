@@ -23,4 +23,5 @@ export const enum RESPONSE_ERROR_MESSAGE {
   URL_NOT_FOUND = "URL not found",
   USER_ID_IS_NOT_CORRECT = "User ID is not correct",
   METHOD_NOT_SUPPORTED = "Method not supported",
+  USER_NOT_FOUND = "User not found",
 }
