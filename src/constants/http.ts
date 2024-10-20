@@ -1,11 +1,18 @@
 import { IncomingMessage } from "http";
 
-export enum HTTP_METHODS {
+export const enum HTTP_METHODS {
   GET = "GET",
   POST = "POST",
   PUT = "PUT",
   DELETE = "DELETE",
 }
+
+export const HTTP_CONTENT_TYPE = {
+  TEXT: {
+    "Content-Type": "text/plain",
+  },
+  JSON: { "Content-Type": "application/json" },
+};
 
 export const enum HTTP_CODES {
   OK = 200,
