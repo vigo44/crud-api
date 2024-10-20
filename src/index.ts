@@ -1,5 +1,7 @@
-export function App() {
-  console.log("Hello world!");
-}
+import dotenv from "dotenv";
+import { DEFAULT_PORT } from "./constants/server";
+import { server } from "./server/server";
 
-App();
+dotenv.config();
+const port = Number(process.env.PORT) || DEFAULT_PORT;
+server({ port });
