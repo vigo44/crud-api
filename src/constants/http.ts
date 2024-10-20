@@ -23,12 +23,17 @@ export const enum HTTP_CODES {
   INTERNAL_SERVER_ERROR = 500,
 }
 
-export const enum RESPONSE_MESSAGE {}
+export const enum RESPONSE_MESSAGE {
+  USER_CREATE = "User create",
+  USER_UPDATE = "User update",
+  USER_DELETE = "User delete",
+}
 
 export const enum RESPONSE_ERROR_MESSAGE {
   INTERNAL_SERVER_ERROR = "Internal server error",
   URL_NOT_FOUND = "URL not found",
   USER_ID_IS_NOT_CORRECT = "User ID is not correct",
+  USER_FORMAT_IS_NOT_CORRECT = "User format is not correct",
   METHOD_NOT_SUPPORTED = "Method not supported",
   USER_NOT_FOUND = "User not found",
 }

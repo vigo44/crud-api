@@ -18,6 +18,9 @@ export const responseErrorHandler = (error: Error, res: ServerResponse) => {
     case RESPONSE_ERROR_MESSAGE.USER_NOT_FOUND:
       writeHeadHandler(HTTP_CODES.NOT_FOUND);
       break;
+    case RESPONSE_ERROR_MESSAGE.USER_FORMAT_IS_NOT_CORRECT:
+      writeHeadHandler(HTTP_CODES.BAD_REQUEST);
+      break;
     default:
       console.log(error.message);
       res
