@@ -15,7 +15,7 @@ export const parseUrl = ({ url, method }: IncomingMessage): string => {
   const arrMetodsWithId: string[] = [HTTP_METHODS.GET, HTTP_METHODS.PUT, HTTP_METHODS.DELETE];
   if (method && arrMetodsWithId.includes(method)) {
     if (userId.includes("/")) {
-      if (userId.length > UUID_LENGTH + 1) {
+      if (userId.length > UUID_LENGTH + 1 || userId.length < UUID_LENGTH) {
         throw new Error(RESPONSE_ERROR_MESSAGE.URL_NOT_FOUND);
       } else {
         if (userId.length === UUID_LENGTH + 1) userId = userId.slice(0, UUID_LENGTH);

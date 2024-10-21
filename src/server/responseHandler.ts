@@ -21,5 +21,5 @@ export const responseHandler = ({ res, statusCode, data }: responseHandlerProps)
 
 export const simpleResponseHandler = ({ res, statusCode, data }: simpleResponseHandlerProps) => {
   res.writeHead(statusCode, HTTP_CONTENT_TYPE.TEXT);
-  res.end(JSON.stringify(data));
+  res.end(data);
 };

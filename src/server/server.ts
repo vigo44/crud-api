@@ -8,4 +8,5 @@ type serverProps = {
 export const server = ({ port }: serverProps) => {
   const server = http.createServer(requestHandler);
   server.listen(port, () => console.log(`Server  running at http://localhost:${port}`));
+  return server;
 };

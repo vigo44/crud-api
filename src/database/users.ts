@@ -37,6 +37,10 @@ class Users {
     this.users[index] = { id, ...newUser };
     return this.users;
   }
+
+  public clear() {
+    this.users = [];
+  }
 }
 
 export const userDB = new Users();
