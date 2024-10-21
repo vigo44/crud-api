@@ -291,7 +291,7 @@ describe("invalid record", () => {
   });
 
   test("should error update user(invalid name)", async () => {
-    const response = await request.put(BASE_URL + "/" + userId).send(JSON.stringify(invalidFakeUser1));
+    const response = await request.put(BASE_URL + "/" + userId).send(JSON.stringify(invalidFakeUser2));
     expect(response.statusCode).toBe(400);
     expect(response.text).toBe(RESPONSE_ERROR_MESSAGE.USER_FORMAT_IS_NOT_CORRECT);
   });
