@@ -16,6 +16,10 @@ Run the application in production mode
 ```
 npm run start:prod
 ```
+Run tests
+```
+npm run test
+```
 ## Endpoints  
 **GET** `api/users` - to get all users  
 **GET** `api/users/${userId}` - to get user by id  
